@@ -31,3 +31,11 @@ jsGameButton.addEventListener("click", function () {
   document.getElementById("js-game").style.display = "grid";
   document.getElementById("word-press").style.display = "none";
 });
+
+document.querySelector(".dl-btn").addEventListener("click", function () {
+  document.querySelector(".dl-btn").classList.toggle("move");
+  document.getElementById("banner").classList.toggle("dark-banner");
+  document.getElementById("about").classList.toggle("dark-about");
+  document.getElementById("portfolio").classList.toggle("dark-portfolio");
+  document.getElementById("footer").classList.toggle("dark-footer");
+});
