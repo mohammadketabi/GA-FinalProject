@@ -32,21 +32,22 @@
           </div>
 
           <ul class="desktop-main-menu">
-            <a href=""><li>Home</li></a>
-            <a href=""><li>About Me</li></a>
-            <a href=""><li>Portfolio</li></a>
-            <a href=""><li>Contact Me</li></a>
-            <a href=""><li>Contact Me</li></a>
+            <a onclick="scrollAboutMe()"><li>About Me</li></a>
+            <a onclick="scrollPortfolio()"><li>Portfolio</li></a>
+            <a onclick="scrollContact()"><li>Contact Me</li></a>
           </ul>
         </div>
         <div class="nav-right">
-
           
+          <!-- Start dark mode switch -->
+
           <div class="dark-light-mode">
             <div class="dl-container">
-              <div class="dl-btn"></div>
+              <div class="dl-btn" onclick="darkMode()"></div>
             </div>
           </div>
+
+          <!-- End dark mode switch -->
 
           <ul class="social-menu">
             <li>
@@ -88,10 +89,9 @@
         />
       </header>
       <ul class="side-main-menu">
-        <a href=""><li>Home</li></a>
-        <a href=""><li>About Me</li></a>
-        <a href=""><li>Portfolio</li></a>
-        <a href=""><li>Contact Me</li></a>
+        <a onclick="scrollAboutMe()"><li>About Me</li></a>
+        <a onclick="scrollPortfolio()"><li>Portfolio</li></a>
+        <a onclick="scrollContact()"><li>Contact Me</li></a>
       </ul>
       <ul class="side-social-media">
         <li>
@@ -111,10 +111,12 @@
     <!-- Start Banner Section -->
 
     <section id="banner" class="banner-section">
-      <div>
-        <h1>Mohammad Ketabi</h1>
-        <p>I'm a Web Developer</p>
-        <div class="banner-btn">My Portfolio</div>
+      <div id="dark-banner"></div>
+      <div class="banner-info">
+        <h2 id="greeting"></h2>
+        <h1>I'm Mohammad Ketabi</h1>
+        <p>Front-end Web Developer</p>
+        <div class="banner-btn" onclick="scrollPortfolio()">My Portfolio</div>
       </div>
     </section>
 
@@ -159,15 +161,14 @@
 
         <div class="item">
           <div class="item-image">
-            <img src="img/portfolio/item-1.jpg" alt="" />
+            <img src="img/portfolio/item-1.jpg" alt="black and white photo" />
           </div>
           <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
+            <h3>B&W Photo</h3>
+            <p>Location: Distillery District</p>
+            <a href="https://www.instagram.com/p/CbnnWumpoIF/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
           </div>
         </div>
 
@@ -175,15 +176,14 @@
 
         <div class="item">
           <div class="item-image">
-            <img src="img/portfolio/item-2.jpg" alt="" />
+            <img src="img/portfolio/item-2.jpg" alt="black and white photo" />
           </div>
           <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
+            <h3>B&W Photo</h3>
+            <p>Location: East Don Parkland</p>
+            <a href="https://www.instagram.com/p/CbgmFAGsUoD/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
           </div>
         </div>
 
@@ -191,15 +191,14 @@
 
         <div class="item">
           <div class="item-image">
-            <img src="img/portfolio/item-3.jpg" alt="" />
+            <img src="img/portfolio/item-3.jpg" alt="black and white photo" />
           </div>
           <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
+            <h3>B&W Photo</h3>
+            <p>Location: Yonge St & Eglinton Ave</p>
+            <a href="https://www.instagram.com/p/CbWZL3FMwDC/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
           </div>
         </div>
 
@@ -207,15 +206,14 @@
 
         <div class="item">
           <div class="item-image">
-            <img src="img/portfolio/item-4.jpg" alt="" />
+            <img src="img/portfolio/item-4.jpg" alt="black and white photo" />
           </div>
           <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
+            <h3>B&W Photo</h3>
+            <p>Location: East Don Parkland</p>
+            <a href="https://www.instagram.com/p/CahsoULLc-z/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
           </div>
         </div>
 
@@ -223,15 +221,14 @@
 
         <div class="item">
           <div class="item-image">
-            <img src="img/portfolio/item-5.jpg" alt="" />
+            <img src="img/portfolio/item5.jpg" alt="black and white photo" />
           </div>
           <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
+            <h3>B&W Photo</h3>
+            <p>Location: Sheppard Ave</p>
+            <a href="https://www.instagram.com/p/Cb8y3TFMMX_/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
           </div>
         </div>
 
@@ -239,15 +236,14 @@
 
         <div class="item">
           <div class="item-image">
-            <img src="img/portfolio/item-6.jpg" alt="" />
+            <img src="img/portfolio/item-6.jpg" alt="black and white photo" />
           </div>
           <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
+            <h3>B&W Photo</h3>
+            <p>Location: Gooderham Building</p>
+            <a href="https://www.instagram.com/p/Ca6VEk-AFCw/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
           </div>
         </div>
 
@@ -255,15 +251,14 @@
 
         <div class="item">
           <div class="item-image">
-            <img src="img/portfolio/item-7.jpg" alt="" />
+            <img src="img/portfolio/item-7.jpg" alt="black and white photo" />
           </div>
           <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
+            <h3>B&W Photo</h3>
+            <p>Location: East Don Parkland</p>
+            <a href="https://www.instagram.com/p/CakX002rMlK/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
           </div>
         </div>
 
@@ -271,85 +266,139 @@
 
         <div class="item">
           <div class="item-image">
-            <img src="img/portfolio/item-8.jpg" alt="" />
+            <img src="img/portfolio/item-8.jpg" alt="black and white photo" />
           </div>
           <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
-          </div>
-        </div>
-
-        <!-- Item 9 -->
-
-        <div class="item">
-          <div class="item-image">
-            <img src="img/portfolio/item-9.jpg" alt="" />
-          </div>
-          <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
+            <h3>B&W Photo</h3>
+            <p>Location: East Don Parkland</p>
+            <a href="https://www.instagram.com/p/CanKwrwpPaC/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
           </div>
         </div>
       </div>
-
       <!-- End Photo Items -->
 
       <!-- Start WP Items -->
 
       <div id="word-press" class="photo-items">
-        <!-- Item 7 -->
-
-        <div class="item">
-          <div class="item-image">
-            <img src="img/portfolio/item-7.jpg" alt="" />
-          </div>
-          <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
-          </div>
-        </div>
-
-        <!-- Item 8 -->
-
-        <div class="item">
-          <div class="item-image">
-            <img src="img/portfolio/item-8.jpg" alt="" />
-          </div>
-          <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
-          </div>
-        </div>
-
         <!-- Item 9 -->
 
         <div class="item">
           <div class="item-image">
-            <img src="img/portfolio/item-9.jpg" alt="" />
+            <img src="img/portfolio/Websites/siron.png" alt="" />
           </div>
           <div class="item-info">
-            <h3>Sample Text</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="item-button">Learn More</div>
+            <h3>SiRON.Tech</h3>
+            <p>WordPress Website</p>
+            <a href="https://siron.tech/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+
+        <div class="item">
+          <div class="item-image">
+            <img src="img/portfolio/Websites/bp.png" alt="" />
+          </div>
+          <div class="item-info">
+            <h3>brandprinciples.ca</h3>
+            <p>WordPress Website</p>
+            <a href="https://brandprinciples.ca/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
+          </div>
+        </div>
+
+        <!-- Item 11 -->
+
+        <div class="item">
+          <div class="item-image">
+            <img src="img/portfolio/Websites/h2g.png" alt="" />
+          </div>
+          <div class="item-info">
+            <h3>howe2golf.com</h3>
+            <p>WordPress Website</p>
+            <a href="https://howe2golf.com/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
+          </div>
+        </div>
+
+        <!-- Item 12 -->
+
+        <div class="item">
+          <div class="item-image">
+            <img src="img/portfolio/Websites/hbs.png" alt="" />
+          </div>
+          <div class="item-info">
+            <h3>hostedbysiron.com</h3>
+            <p>WordPress Website</p>
+            <a href="https://hostedbysiron.com/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
+          </div>
+        </div>
+
+        <!-- Item 13 -->
+
+        <div class="item">
+          <div class="item-image">
+            <img src="img/portfolio/Websites/bw.png" alt="" />
+          </div>
+          <div class="item-info">
+            <h3>briarswalkers.ca</h3>
+            <p>WordPress Website</p>
+            <a href="https://briarswalkers.ca/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
+          </div>
+        </div>
+
+        <!-- Item 14 -->
+
+        <div class="item">
+          <div class="item-image">
+            <img src="img/portfolio/Websites/cbwc.png" alt="" />
+          </div>
+          <div class="item-info">
+            <h3>cbwc-ontario.org</h3>
+            <p>WordPress Website</p>
+            <a href="https://cbwc-ontario.org/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
+          </div>
+        </div>
+
+        <!-- Item 15 -->
+
+        <div class="item">
+          <div class="item-image">
+            <img src="img/portfolio/Websites/sei.png" alt="" />
+          </div>
+          <div class="item-info">
+            <h3>sports.engineering</h3>
+            <p>WordPress Website</p>
+            <a href="https://sports.engineering/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
+          </div>
+        </div>
+
+        <!-- Item 16 -->
+
+        <div class="item">
+          <div class="item-image">
+            <img src="img/portfolio/Websites/krc.png" alt="" />
+          </div>
+          <div class="item-info">
+            <h3>krccontracting.com</h3>
+            <p>WordPress Website</p>
+            <a href="https://krccontracting.com/" target="_blank"
+              ><div class="item-button">Learn More</div></a
+            >
           </div>
         </div>
       </div>
@@ -363,7 +412,7 @@
 
         <div class="item">
           <div class="item-image">
-            <img src="img/portfolio/item-5.jpg" alt="" />
+            <img src="img/portfolio/item5.jpg" alt="" />
           </div>
           <div class="item-info">
             <h3>Sample Text</h3>

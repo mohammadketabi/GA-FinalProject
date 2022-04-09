@@ -32,10 +32,45 @@ jsGameButton.addEventListener("click", function () {
   document.getElementById("word-press").style.display = "none";
 });
 
-document.querySelector(".dl-btn").addEventListener("click", function () {
+function darkMode() {
   document.querySelector(".dl-btn").classList.toggle("move");
   document.getElementById("banner").classList.toggle("dark-banner");
+  document.getElementById("dark-banner").classList.toggle("dark-layer");
   document.getElementById("about").classList.toggle("dark-about");
   document.getElementById("portfolio").classList.toggle("dark-portfolio");
   document.getElementById("footer").classList.toggle("dark-footer");
-});
+}
+
+const date = new Date();
+const hour = date.getHours();
+console.log(hour);
+
+if (hour > 5 && hour <= 11) {
+  document.getElementById("greeting").innerHTML = "Good morning!";
+} else if (hour > 11 && hour <= 17) {
+  document.getElementById("greeting").innerHTML = "Good afternoon!";
+} else if (hour > 17 && hour <= 23){
+  document.getElementById("greeting").innerHTML = "Good evening!";
+  darkMode();
+}else {
+  document.getElementById("greeting").innerHTML = "Good night!";
+  darkMode();
+}
+
+function scrollAboutMe() {
+  const element = document.getElementById("about");
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
+  document.getElementById("click-on-menu").classList.remove("side-menu-show");
+}
+
+function scrollPortfolio() {
+  const element = document.getElementById("portfolio");
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
+  document.getElementById("click-on-menu").classList.remove("side-menu-show");
+}
+
+function scrollContact() {
+  const element = document.getElementById("footer");
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
+  document.getElementById("click-on-menu").classList.remove("side-menu-show");
+}
