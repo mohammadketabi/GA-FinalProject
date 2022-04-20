@@ -3,19 +3,19 @@
 function scrollAboutMe() {
   const element = document.getElementById("about");
   element.scrollIntoView({ behavior: "smooth", block: "start" });
-  document.getElementById("click-on-menu").classList.remove("side-menu-show");
+  document.getElementById("side-menu-id").classList.remove("side-menu-show");
 }
 
 function scrollPortfolio() {
   const element = document.getElementById("portfolio");
   element.scrollIntoView({ behavior: "smooth", block: "start" });
-  document.getElementById("click-on-menu").classList.remove("side-menu-show");
+  document.getElementById("side-menu-id").classList.remove("side-menu-show");
 }
 
 function scrollContact() {
   const element = document.getElementById("footer");
   element.scrollIntoView({ behavior: "smooth", block: "start" });
-  document.getElementById("click-on-menu").classList.remove("side-menu-show");
+  document.getElementById("side-menu-id").classList.remove("side-menu-show");
 }
 
 // HamburgerMenu and Side menu close btn
@@ -24,11 +24,11 @@ let hamburgerMenu = document.getElementById("hamburger-menu");
 let closeMenu = document.getElementById("close-menu-btn");
 
 hamburgerMenu.addEventListener("click", function () {
-  document.getElementById("click-on-menu").classList.add("side-menu-show");
+  document.getElementById("side-menu-id").classList.add("side-menu-show");
 });
 
 closeMenu.addEventListener("click", function () {
-  document.getElementById("click-on-menu").classList.remove("side-menu-show");
+  document.getElementById("side-menu-id").classList.remove("side-menu-show");
 });
 
 //Greeting Text

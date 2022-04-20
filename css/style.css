@@ -191,9 +191,6 @@ ul {
 /*  Responsive Properties  */
 
 @media screen and (min-width: 850px) {
-  .dark-light-mode {
-    display: block;
-  }
   #hamburger-menu {
     display: none;
   }
@@ -224,15 +221,12 @@ ul {
 }
 
 .banner-info {
-  position: absolute;
-  z-index: 9;
-}
-
-.banner-section div {
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  z-index: 9;
 }
 
 .banner-section h1 {
@@ -393,7 +387,6 @@ ul {
   height: auto;
   overflow: hidden;
   position: relative;
-  overflow: hidden;
   border: 1px solid rgb(230, 230, 230);
 }
 
