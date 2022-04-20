@@ -13,13 +13,12 @@
   </head>
   <body>
     <div id="main">
-
       <!-- First page -->
 
       <div id="start" class="first-page">
         <h1>Dice Game</h1>
+        <div id="error">Please Enter Your Name!</div>
         <div class="input-container">
-          <div id="error">Please Enter Your Name!</div>
           <input
             id="entered-player-1"
             type="text"
@@ -34,7 +33,10 @@
           />
         </div>
         <div id="start-app-btn" class="btn">Play</div>
-        <footer>Dice Game By Mohammad Ketabi</footer>
+        <footer>
+          Dice Game By
+          <a href="../../index.html" target="_blank">Mohammad Ketabi</a>
+        </footer>
       </div>
 
       <!-- Game page -->
@@ -54,19 +56,24 @@
           </div>
         </div>
         <div id="start-game-btn" class="btn">Play Game</div>
-        <footer>Dice Game By Mohammad Ketabi</footer>
+        <footer>
+          Dice Game By
+          <a href="../../index.html" target="_blank">Mohammad Ketabi</a>
+        </footer>
       </div>
 
       <!-- Last page -->
 
       <div id="finish" class="last-page">
-        <h1 id="win-player"></h1>
+        <h1 id="win-player" class="winner"></h1>
         <div id="finish-app-btn" class="btn" onclick="startAgain()">
           Play Again
         </div>
-        <footer>Dice Game By Mohammad Ketabi</footer>
+        <footer>
+          Dice Game By
+          <a href="../../index.html" target="_blank">Mohammad Ketabi</a>
+        </footer>
       </div>
-      
     </div>
 
     <script src="index.js" charset="utf-8"></script>
