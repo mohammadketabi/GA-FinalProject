@@ -308,7 +308,6 @@ ul {
   }
 
   .my-image img {
-    border-radius: 50%;
     min-width: 200px;
     height: 200px;
     margin-right: 50px;
@@ -383,21 +382,17 @@ ul {
 }
 
 .item {
-  width: 100%;
-  height: auto;
   overflow: hidden;
   position: relative;
-  border: 1px solid rgb(230, 230, 230);
+  border: 1px solid rgba(230, 230, 230, 0.262);
 }
 
-.item-image {
-  width: 100%;
-  height: 100%;
+.item-image{
+  display: flex;
 }
 
 .item-image img {
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
 }
 
 .item-info {
