@@ -374,7 +374,6 @@ ul {
   display: none;
   grid-template-columns: 1fr;
   gap: 20px;
-  transition: 0.5s all ease-in-out;
 }
 
 .photos-display-grid {

@@ -42,10 +42,10 @@ if (hour > 5 && hour <= 11) {
   document.getElementById("greeting").innerHTML = "Good afternoon!";
 } else if (hour > 17 && hour <= 23) {
   document.getElementById("greeting").innerHTML = "Good evening!";
-  darkMode();
+  // darkMode();
 } else {
   document.getElementById("greeting").innerHTML = "Good night!";
-  darkMode();
+  // darkMode();
 }
 
 //Portfolio Filters
